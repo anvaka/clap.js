@@ -4,7 +4,8 @@
   "description": "Unified tap/click event API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -s onClap ./index.js > dist/onclap.js && uglifyjs dist/onclap.js > dist/onclap.min.js"
   },
   "keywords": [
     "click",
